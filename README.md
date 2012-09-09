@@ -32,6 +32,15 @@ Twitter apps I've use on Android: Seesmic, TweetCast
 Popup menus in iPad apps
 
 
+Target Platforms
+================
+WebOS (HP TouchPad)
+web (including off-line)
+Chrome Extension
+Android (via PhoneGap)
+iOS (via PhoneGap)
+
+
 Technologies
 ============
 Rails

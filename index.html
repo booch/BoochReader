@@ -17,14 +17,9 @@
     <!-- Tell search engines not to index the app. -->
     <meta name="robots" content="noindex">
 
-    <!-- Tell WebOS that we're done loading and initializing. -->
-    <script type="text/javascript">
-      if ( window.PalmSystem ) {
-        document.addEventListener('DOMContentLoaded', function(){
-          PalmSystem.stageReady();
-        });
-      }                           
-    </script>
+    <!-- Use PhoneGap (Apache Cordova) to normalize differences between platforms. -->
+    <script type="text/javascript" src="cordova-2.0.0.js"></script>
+
   </head>
 
   <body>

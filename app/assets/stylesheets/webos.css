@@ -1,0 +1,54 @@
+h1 {
+    color: red;
+}
+
+#webos-app-menu {
+    display: none;
+    z-index: 120;
+    position: fixed;
+    font-size: 18px;
+    border-width: 12px 24px 20px 24px;
+    -webkit-box-sizing: border-box;
+    -webkit-border-image: url(assets/appmenu.png) 12 24 20 24 stretch stretch;
+    background-color: #444;
+    color: white;
+    top: 0px;
+    left: -10px;
+    min-width: 210px;
+}
+
+#webos-app-menu ul {
+    margin: -12px -24px 0 -23px;
+    border-top: 6px;
+    list-style: none;
+}
+
+#webos-app-menu li {
+    margin: 0 -24px 0 -24px;
+    border: 4px;
+    -webkit-border-image: url(assets/appmenu-divider.png) 0 0 2 0 stretch;
+    border-bottom: 2px;
+    padding: 10px 7px 10px 5px;
+}
+
+#webos-app-menu li.selected {
+    background-image: url(assets/appmenu-highlight.png);
+    background-size: 40px 56px;
+}
+
+#webos-app-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (-webkit-min-device-pixel-ratio:1.5) {
+    #webos-app-menu {
+        -webkit-border-image: url(assets/appmenu-1.5.png) 18 36 30 36 stretch stretch;
+    }
+    #webos-app-menu li {
+        -webkit-border-image: url(assets/appmenu-divider-1.5.png) 0 0 3 0 stretch;
+    }
+    #webos-app-menu li.selected {
+        background-image: url(assets/appmenu-highlight-1.5.png);
+    }
+}

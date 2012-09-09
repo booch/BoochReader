@@ -13,7 +13,7 @@ namespace :webos do
   task :build => ['app:build'] do
     # TODO: Build the appinfo.json file, based on global configuration info (like version number).
     %x(cp -a public/index.html webos/)
-    %x(cp -a public/assets/*.{js,css} webos/assets/)
+    %x(cp -a public/assets/*.{js,css,png} webos/assets/)
     %x(cd webos && palm-package .)
   end
 

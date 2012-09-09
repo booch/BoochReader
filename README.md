@@ -18,12 +18,14 @@ Pages
   * Readable version
   * Full HTML version
 * Single tweet
-* Config
+* Preferences
   * Which services to include
   * Accounts for each service
   * Readability vs. Pocket (Read It Later) for readable versions
   * Advanced browser vs. built-in browser for full HTML versions on WebOS
   * How much disk space to use for caching (assuming we can directly access disk space)
+* About page (or popup)
+* Help page (or popup)
 
 
 Inspiration

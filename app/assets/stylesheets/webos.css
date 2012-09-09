@@ -39,6 +39,7 @@ h1 {
 #webos-app-menu li a {
     color: white;
     text-decoration: none;
+    display: block;
 }
 
 @media (-webkit-min-device-pixel-ratio:1.5) {

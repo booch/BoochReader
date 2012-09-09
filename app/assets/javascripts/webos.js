@@ -8,5 +8,10 @@ document.addEventListener("deviceready", function(){
         window.addEventListener('appmenuopen', function() {
             $('#webos-app-menu').show();
         });
+        // Close the menu when an item is clicked.
+        $('#webos-app-menu a').click(function(){
+            $('#webos-app-menu').hide();
+            // Don't prevent the default action, which is to transition to the target page.
+        });
     }
 });

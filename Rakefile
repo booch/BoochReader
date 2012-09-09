@@ -1,21 +1,7 @@
-require 'rake'
+#!/usr/bin/env rake
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-task :default => []
+require File.expand_path('../config/application', __FILE__)
 
-namespace :webos do
-  desc 'Build the app for WebOS'
-  task :build do
-    # TODO: Build the appinfo.json file, based on global configuration info (like version number).
-    %x{cp index.html webos/}
-    %x{cd webos && palm-package .}
-  end
-
-  desc 'Deploy the latest build of the app to an attached WebOS device'
-  task :deploy do
-    %x{cd webos && palm-install #{ipk_file}}
-  end
-end
-
-def ipk_file
-  %x{cd webos && ls -1tr *.ipk | tail -1}
-end
+BoochReader::Application.load_tasks

@@ -20,15 +20,14 @@
     <!-- Use PhoneGap (Apache Cordova) to normalize differences between platforms. -->
     <script type="text/javascript" src="cordova-2.0.0.js"></script>
 
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+
   </head>
 
   <body>
 
-    <header>
-      <h1>This app does nothing!</h1>
-    </header>
-    
-    <p>But it does run on WebOS!</p>
+    <%= yield %>
 
   </body>
 

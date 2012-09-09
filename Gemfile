@@ -15,6 +15,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery_mobile_rails', git: 'git://github.com/tscolari/jquery-mobile-rails.git', branch: '1.2.0-alpha.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'

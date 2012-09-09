@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/tscolari/jquery-mobile-rails.git
+  revision: 880f0a8a6dee94c461b26cded51836b705796b5a
+  branch: 1.2.0-alpha.1
+  specs:
+    jquery_mobile_rails (1.2.0.alpha.1)
+      rails (>= 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -113,6 +121,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   debugger
   jquery-rails
+  jquery_mobile_rails!
   rails (~> 3.2.8)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

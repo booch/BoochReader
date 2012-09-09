@@ -49,5 +49,9 @@ module BoochReader
 
     # Precompile *all* assets, except those that start with underscore
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
+    # Don't start the asset references with "/", since that's the device root path for WebOS.
+    config.action_controller.relative_url_root = "."
+    config.assets.prefix = 'assets'
   end
 end

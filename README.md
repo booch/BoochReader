@@ -50,7 +50,7 @@ Target Platforms
 Technologies
 ============
 
-* Rails
+* Rails (would consider using Middleman instead)
   * Form Builders (SimpleForm 2)
   * Helpers
   * Asset Pipeline (minification)
@@ -82,6 +82,8 @@ JavaScript Libraries
 License
 =======
 
-This software is copyright 2012 by Craig Buchek and BoochTek, LLC.
+This software is copyright 2012-2013 by Craig Buchek and BoochTek, LLC.
 
 This software is licensed under the GNU General Public License, version 3.
+
+(We'd be willing to consider alternate licensing arrangements.)

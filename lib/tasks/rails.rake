@@ -33,3 +33,13 @@ namespace :server do
     "#{Rails.root}/log/server.log"
   end
 end
+
+namespace :app do
+  desc 'Build all the HTML and assets for the app'
+  task :build => ['assets:precompile'] do
+    %x(rake server:restart)
+    # Wait until the server is ready. TODO: Need to make this a dyanmic wait.
+    sleep 5
+    %x(curl http://localhost:3000/index.html > public/index.html)
+  end
+end

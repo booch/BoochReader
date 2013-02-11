@@ -1,0 +1,19 @@
+{
+    "title": "BoochReader",
+    "version": "0.0.2",
+    "id": "com.boochtek.reader",
+    "vendor": "BoochTek, LLC",
+    "vendorurl": "http://www.boochtek.com",
+    "type": "web",
+    "uiRevision": "2",
+    "main": "index.html",
+    "noDeprecatedStyles": true,
+    "icon": "icons/medium.jpg",
+    "miniicon": "icons/small.jpg",
+    "keywords": ["feed reader", "RSS", "feeds", "reader", "Twitter", "Google Reader"],
+    "noWindow": false,
+    "plug-ins": false,
+    "tapToShareSupported": false,
+    "theme": "light",
+    "dockMode": true
+}

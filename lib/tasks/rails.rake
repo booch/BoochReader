@@ -43,3 +43,11 @@ namespace :app do
     %x(curl http://localhost:3000/index.html > public/index.html)
   end
 end
+
+def phonegap_dir
+  %x(ls -1trd phonegap-*).split(/\n/).last
+end
+
+def phonegap_version
+  phonegap_dir.split('-').last
+end

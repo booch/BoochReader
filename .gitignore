@@ -17,6 +17,4 @@
 # Ignore files that Rails generates for us.
 public/index.html
 public/assets/*
-webos/index.html
-webos/assets/*
-webos/*.ipk
+webos

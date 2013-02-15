@@ -15,9 +15,9 @@
 /tmp
 
 # Ignore files that Rails generates for us.
-public/index.html
-public/assets/*
-webos
-android
-chrome
-ios
+/public/index.html
+/public/assets/*
+/webos
+/android
+/chrome
+/ios

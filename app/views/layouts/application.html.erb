@@ -8,20 +8,22 @@
 
     <meta name="application-name" content="BoochReader">
 
-    <!-- Use Chrome Frame inside of IE, if possible. -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
     <!-- Optimize viewport for mobile devices. See https://github.com/h5bp/html5-boilerplate/blob/v4.0.0/doc/html.md#mobile-viewport -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- Tell search engines not to index the app. -->
-    <meta name="robots" content="noindex">
+    <link rel="stylesheet" type="text/css" href="assets/application.css" media="all">
 
     <!-- Use PhoneGap (Apache Cordova) to normalize differences between platforms. -->
-    <script type="text/javascript" src="cordova-2.0.0.js"></script>
+    <script type="text/javascript" src="assets/cordova-2.3.0.js"></script>
 
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
+    <!-- Pull in some common libs to make JavaScript development easier. -->
+    <script type="text/javascript" src="assets/jquery.js"></script>
+    <script type="text/javascript" src="assets/jquery.mobile.js"></script>
+
+    <!-- Pull in app-specific JavaScript code. -->
+    <script type="text/javascript" src="assets/application.js"></script>
+
+    <script type="text/javascript" src="assets/webos.js"></script>
 
   </head>
 

@@ -38,7 +38,11 @@ namespace :app do
   desc 'Build all the HTML and assets for the app'
   task :build => ['assets:precompile'] do
     %x(rake server:restart)
-    # Wait until the server is ready. TODO: Need to make this a dyanmic wait.
+
+    # Don't need the pre-gzipped files for mobile apps.
+    %x(rm public/assets/*.gz)
+
+    # Wait until the server is ready. TODO: Need to make this a dynamic wait.
     sleep 5
     %x(curl http://localhost:3000/index.html > public/index.html)
   end
@@ -50,4 +54,21 @@ end
 
 def phonegap_version
   phonegap_dir.split('-').last
+end
+
+def app_name
+  app_info['title']
+end
+
+def app_id
+  app_info['id']
+end
+
+def app_version
+  app_info['version']
+end
+
+require 'json'
+def app_info
+  JSON.parse(IO.read('appinfo.json'))
 end

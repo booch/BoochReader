@@ -49,7 +49,7 @@ namespace :app do
 end
 
 def phonegap_dir
-  %x(ls -1trd phonegap-*).split(/\n/).last
+  %x(ls -1trd phonegap-*.*).split(/\n/).last
 end
 
 def phonegap_version

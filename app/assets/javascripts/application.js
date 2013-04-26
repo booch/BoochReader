@@ -1,3 +1,5 @@
+// TODO: Clean this all up, as it was a proof-of-concept hack. Make account and Twitter stuff OO. See if we can use bindings instead of events.
+
 // These come from config.js, which comes from config.js.erb, which pulls the from the environment when building.
 // TODO: Move this whole thing to config.js.erb.
 var TWITTER_OPTIONS = {
